@@ -22,7 +22,7 @@
 - `GET    /viajes/ciudad/:destino`  
   Consulta viajes activos filtrados por ciudad.
 
-- `POST   /viajes`  
+- `POST /viajes`  
   Registra un nuevo viaje.  
   **Body ejemplo:**
   ```json
@@ -33,12 +33,12 @@
     "pasajero": "Luis"
   }
 
-- ` PUT /viajes/:id` 
- Actualiza los datos de un viaje.
+- `PUT /viajes/:id`  
+  Actualiza un viaje.  
+  **Body ejemplo:**
   ```json
-
-{
-  "pasajero": "Mario",
-  "destino": "CDMX",
-  "hora": "19:30"
-}
+  {
+    "pasajero": "Mario",
+    "destino": "CDMX",
+    "hora": "19:30"
+  }
